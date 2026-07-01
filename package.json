@@ -1,0 +1,17 @@
+{
+  "name": "pentscribe",
+  "version": "2.0.0",
+  "description": "Professional penetration test report writer - web and desktop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "docx": "^9.0.2",
+    "stripe": "^16.8.0",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.1"
+  }
+}
