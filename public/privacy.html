@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — PentScribe</title>
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  .legal { max-width: 760px; margin: 0 auto; padding: 60px 24px; line-height: 1.7; color: var(--text); }
+  .legal h1 { font-family: var(--font-display); }
+  .legal h2 { font-family: var(--font-display); font-size: 18px; margin-top: 32px; color: var(--accent); }
+  .legal a { color: var(--info); }
+  .legal .updated { color: var(--text-faint); font-size: 13px; margin-bottom: 32px; }
+  .legal table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13.5px; }
+  .legal th, .legal td { text-align: left; padding: 8px; border-bottom: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="legal">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: [FILL IN DATE WHEN YOU PUBLISH THIS]</p>
+
+  <p>This explains what data PentScribe collects, why, and how it's protected.</p>
+
+  <h2>What We Collect</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Stored where</th></tr>
+    <tr><td>Email address</td><td>Account login, receipts</td><td>Supabase (auth)</td></tr>
+    <tr><td>Password (hashed, never plain text)</td><td>Account login</td><td>Supabase (auth)</td></tr>
+    <tr><td>Google account info (if you sign in with Google)</td><td>Account login</td><td>Supabase (auth), via Google OAuth</td></tr>
+    <tr><td>Report content you create</td><td>So you can access saved reports</td><td>Supabase (database)</td></tr>
+    <tr><td>Payment info (card details)</td><td>Processing Pro subscriptions</td><td>Stripe — we never see or store your full card number</td></tr>
+  </table>
+
+  <h2>AI-Assisted Drafting</h2>
+  <p>When you use the "AI Draft" feature, the finding title, severity, and any notes you've entered are sent to Anthropic's Claude API to generate draft text. This is used solely to generate your report content and is not used to train AI models.</p>
+
+  <h2>Who Can See Your Data</h2>
+  <p>Your saved reports are private to your account, enforced by database-level access rules (Row Level Security) — not even other logged-in users can query your data. [YOUR NAME OR BUSINESS NAME] can access account and subscription records for support and legal purposes.</p>
+
+  <h2>Third-Party Services We Use</h2>
+  <ul>
+    <li><strong>Supabase</strong> — authentication and database hosting</li>
+    <li><strong>Stripe</strong> — payment processing</li>
+    <li><strong>Anthropic</strong> — AI drafting feature</li>
+    <li><strong>Render</strong> — application hosting</li>
+  </ul>
+  <p>Each of these providers has their own privacy policy governing how they handle data on their systems.</p>
+
+  <h2>Data Retention</h2>
+  <p>We keep your account and report data for as long as your account is active. You can request deletion of your account and all associated data by contacting [YOUR SUPPORT EMAIL].</p>
+
+  <h2>Your Rights</h2>
+  <p>Depending on your location, you may have rights to access, correct, or delete your personal data, and to object to certain processing. Contact [YOUR SUPPORT EMAIL] to exercise these rights.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy from time to time. Material changes will be reflected by updating the date at the top of this page.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: [YOUR SUPPORT EMAIL]</p>
+
+  <p style="margin-top:40px; padding:16px; border:1px solid var(--border); border-radius:8px; color: var(--text-dim); font-size: 13px;">
+    ⚠️ This is a starting template, not legal advice. If you plan to serve customers in the EU/UK, GDPR has specific additional requirements; California residents are covered by CCPA. A lawyer or a compliance service should review this before you handle real client vulnerability data at scale.
+  </p>
+</div>
+</body>
+</html>
